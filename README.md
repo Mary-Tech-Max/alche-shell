@@ -1,1 +1,2 @@
-alche-shell project1
+alche-shell permissions
+reminder on commands
