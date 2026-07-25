@@ -1,2 +1,2 @@
 #!/bin/bash
-head -3 iacta > /tmp/iacta tail -1 /tmp/iacta
+head -3 iacta > /tmp/iacta  tail -1 /tmp/iacta
