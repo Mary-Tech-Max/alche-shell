@@ -1,2 +1,2 @@
 #!/bin/bash
-head -3 iacta > /tmp/iacta tail -1 /tmp/iacta
+python3 -c 'print(open("iacta").readlines()[2], end="")'
