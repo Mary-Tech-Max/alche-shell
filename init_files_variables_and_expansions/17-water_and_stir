@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%d\n" $((WATER + STIR))
+printf "%o\n" $(( 5#${WATER:-0} + 4#${STIR:-0} ))
