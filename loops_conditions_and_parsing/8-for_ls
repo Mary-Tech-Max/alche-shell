@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This script displays non-hidden files replacing the first dash with an underscore
+# This script displays directory contents with dashes replaced by underscores
 
-for file in *
+for file in $(ls)
 do
-    echo "${file/-/_}"
+    echo "$file" | tr '-' '_'
 done
