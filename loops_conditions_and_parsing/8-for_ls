@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-# This script displays files with dashes replaced by underscores
+# This script displays directory contents replacing the first dash with an underscore
 
 for file in *
 do
-    if [ "$file" != "$(basename "$0")" ]
-    then
-        echo "$file" | tr '-' '_'
-    fi
+    echo "${file/-/_}"
 done
