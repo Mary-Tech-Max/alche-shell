@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-# This script displays directory contents with dashes replaced by underscores
+# This script displays files with dashes replaced by underscores
 
-for file in $(ls)
+for file in *
 do
-    echo "$file" | tr '-' '_'
+    if [ "$file" != "$(basename "$0")" ]
+    then
+        echo "$file" | tr '-' '_'
+    fi
 done
