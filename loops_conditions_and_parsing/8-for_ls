@@ -1,10 +1,7 @@
 #!/usr/bin/env bash
-# This script displays directory contents after the first dash
+# This script displays non-hidden files replacing the first dash with an underscore
 
 for file in *
 do
-    if [[ "$file" == *-* ]]
-    then
-        echo "${file#*-}"
-    fi
+    echo "${file/-/_}"
 done
